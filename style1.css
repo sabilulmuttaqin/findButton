@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+html {
+    height:32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hidden {
+    display: none;
+}
+.box.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.box {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(245, 123, 123);
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s all, 0.3s visibility, 0.3s opacity;
+    font-size: 0px;
+}
+.size {
+    width: 300px;
+    height: 200px;
+    font-size: 50px;
+}
+
+.box.caption {
+    background-color: none; /*Disesuaikan jika ingin ada box bisa mengubah warnanya*/
+}
+.judul {
+    color: white;
+    font-size: 20px;
+}
+
+.bg {
+    background-image: url(bg.jpg);
+    /* background-color: gray; */
+}
+
+button {
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 32px;
+    width: 80px;
+    background-color: rgb(35, 35, 236);
+    border-radius: 10px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    right: -239px;
+    top: 400px;
+}
+
+button:hover {
+    opacity: 1;
+}
+ 
