@@ -10,12 +10,12 @@ button.addEventListener("click", function () {
   if (box.classList.contains(satu)) {
     [satu, dua] = [dua, satu];
   }
-box.classList.add('visible')
+  box.classList.add("visible");
   box.classList.toggle("size");
   setTimeout(() => {
     box.classList.toggle("caption");
     body.classList.toggle("bg");
-    box.style.display = 'flex'; 
+    box.style.display = "flex";
     if (audio.paused) {
       audio.play();
     } else {
@@ -23,5 +23,4 @@ box.classList.add('visible')
       audio.currentTime = 0;
     }
   }, 600);
-
 });
